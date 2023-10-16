@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(to right top, #617077, #5c686f, #586166, #53595d, #4e5255);
+  & .brand{
+    color: rgb(var(--background-color));
+  }
+  & .links{
+    display: flex;
+    gap: 1rem;
+    & .nav-link{
+        color: rgb(var(--background-color));
+        &:hover{
+            color: rgb(var(--primary-color-500));
+        }
+        &.active{
+            color: rgb(var(--primary-color-500));
+        }
+    }
+  }
+}

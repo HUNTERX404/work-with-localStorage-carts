@@ -1,0 +1,11 @@
+:root {
+  --primary-color-400: 230, 214, 199;
+  --primary-color-500: 195, 164, 136;
+  --primary-color-600: 155, 148, 130;
+
+  --secondary-color-400: 179, 179, 179;
+  --secondary-color-500: 97, 112, 119;
+  --secondary-color-600: 78, 82, 85;
+  
+  --background-color: 238, 233, 227;
+}

@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+body {
+  font-family: "Roboto-Regular", sans-serif;
+  background: rgba(var(--background-color), 0.4);
+}
+.container {
+  max-width: 87.5rem;
+  margin: auto;
+  padding: 0 5rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.pt-4 {
+  padding-top: 1rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.font-bold {
+  font-weight: bold;
+}
+.w-50 {
+  width: 50%;
+}
+.mx-auto{
+  margin: auto;
+}
+.counter {
+  border: 1px solid rgb(var(--secondary-color-500)) !important;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.counter-input {
+  width: 3rem;
+  background: none;
+  border: none;
+  user-select: none;
+  text-align: center;
+  color: rgb(var(--secondary-color-600));
+}
+
+.counter-input:focus {
+  outline: none;
+}
+
+.text-primary-500 {
+  color: rgb(var(--primary-color-500));
+}
+.text-secondary-500 {
+  color: rgb(var(--secondary-color-500));
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+@media (width<500px) {
+  .container {
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,14 @@
+/* other */
+@import "./other/colors.css";
+@import "./other/reset.css";
+@import "./other/global.css";
+
+/* pages */
+@import "./pages/home.css";
+@import "./pages/product.css";
+@import "./pages/cart.css";
+
+/* components */
+@import "./components/layout/navbar.css";
+@import "./components/ui/button.css";
+@import "./components/ui/badge.css";

@@ -1,0 +1,62 @@
+.home {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 18.75rem));
+  place-content: center;
+  gap: 3rem;
+  & .card {
+    background: rgb(var(--primary-color-400));
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    & .card-image {
+      width: 100%;
+      border-radius: 0.5rem;
+      object-fit: cover;
+      aspect-ratio: 3/2;
+    }
+    & .card-title {
+      font-size: 18px;
+      color: rgb(var(--secondary-color-600));
+      font-weight: bold;
+    }
+    & .card-description {
+      font-size: 14px;
+    }
+    & .card-buttons {
+      display: flex;
+      gap: 1rem;
+      & button {
+        width: 50%;
+      }
+      & a {
+        width: 50%;
+      }
+    }
+  }
+}
+@media (width<=460px) {
+  .home {
+    & .card {
+      & .card-title {
+        font-size: 14px;
+      }
+      & .card-description {
+        font-size: 12px;
+      }
+      & .card-price {
+        font-size: 12px;
+      }
+      & .card-buttons {
+        flex-wrap: wrap;
+        & button {
+          flex-basis: 100%;
+        }
+        & a {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+}
